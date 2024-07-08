@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Englewood Wine Merchants</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./js/script.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="header-container mx-auto">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <button class="btn btn-outline-secondary d-lg-none" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <h1 class="header-logo mb-0 d-lg-none">EWM</h1>
+            <div class="search d-flex align-items-center d-lg-none">
+                <button class="btn btn-outline-secondary search-button rounded-circle" type="button" data-toggle="collapse" data-target="#searchToggleExternalContent" aria-controls="searchToggleExternalContent" aria-expanded="false" aria-label="Toggle search">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="icons d-flex align-items-center d-lg-none">
+                <a class="text-dark mr-2" href="#"><i class="bi bi-bag"></i></a>
+                <a class="text-dark" href="#"><i class="bi bi-person"></i></a>
+            </div>
+            <h1 class="header-logo mb-0 d-none d-lg-block">ENGLEWOOD WINE MERCHANTS</h1>
+            <nav class="d-none d-lg-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Shop Wine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Spirits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pantry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">E-Gift Cards</a></li>
+                </ul>
+            </nav>
+            <div class="search d-none d-lg-flex align-items-center position-relative">
+                <input class="form-control search-input rounded-pill mr-2" type="text" placeholder="Search entire store here...">
+                <button class="btn btn-outline-secondary search-button position-absolute" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="icons d-none d-lg-flex align-items-center">
+                <a class="text-dark mr-2" href="#"><i class="bi bi-geo-alt"></i></a>
+                <a class="text-dark mr-2" href="#"><i class="bi bi-person"></i></a>
+                <a class="text-dark mr-2" href="#"><i class="bi bi-telephone"></i></a>
+                <a class="text-dark position-relative" href="#"><i class="bi bi-bag"></i><span class="cart-count">0</span></a>
+            </div>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light p-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">Shop Wine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Spirits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pantry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">E-Gift Cards</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse" id="searchToggleExternalContent">
+            <div class="bg-light p-4">
+                <input class="form-control search-input rounded-pill mb-2" type="text" placeholder="Search entire store here...">
+            </div>
+        </div>
+    </header>
+        
+    <main>
+        <section class="hero d-flex align-items-center">
+            <div class="container text-left">
+                <h2 class="display-4">Curated Selections</h2>
+                <p>Join 10,000 clients nationwide who enjoy reading about and <br>receiving the finest selections from the wine world.</p>
+                <div class="buttons mt-4">
+                    <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+                    <a href="#" class="btn btn-secondary btn-lg">Join Us</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="merchant-pick my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-flex flex-column">
+                        <h2 class="display-4">Merchant's<br>Pick</h2>
+                        <p class="pinfo">Hand-selected features for<br> both budding enthusiasts and<br> avid collectors.</p>
+                        <button class="btn btn-outline-primary">View All</button>
+                    </div>
+                    <div class="col-md-8">
+                        <div id="merchantCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="col-6 px-0">
+                                        <img src="./images/39beb1bf0b0b4eb7df45036d9b29d7fe.png" class="d-block w-100" alt="Poggiotondo">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-6 px-0">
+                                        <div class="carousel-caption w-100 d-flex flex-column justify-content-center text-white p-4">
+                                            <h5>2018 Poggiotondo,<br> Brunello di Montalcino</h5>
+                                            <p>Brunello at this price and Quality is your <br>new house pour.</p>
+                                            <p class="rating">95</p>
+                                            <a href="#" class="btn btn-outline-light">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#merchantCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#merchantCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+        
+        
+        
+
+        <section class="section my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="./images/wine.png" class="card-img-top" alt="E-Gift Card">
+                            <div class="card-body">
+                                <h3 class="card-title">E-Gift Card</h3>
+                                <p class="card-text">Barolo, Brunello, Burgundy, Bordeaux, and even Olive Oil - there are so many options and so many personal preferences. Let your recipient decide what he or she prefers with an Englewood Wine Merchants e-gift card.</p>
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="./images/solia.png" class="card-img-top" alt="Corporate Concierge & Gifting">
+                            <div class="card-body">
+                                <h3 class="card-title">Corporate Concierge & Gifting</h3>
+                                <p class="card-text">Sending several gifts? Our corporate gifting team is here to help. From Napa Valley to the hills of Tuscany, we can customize your gifts whether you are sending to corporate clients, colleagues, friends, or loved ones.</p>
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cellar-essentials my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-flex flex-column">
+                        <h2 class="display-4">Cellar<br>Essentials</h2>
+                        <p class="pinfo">Seasonal cellar essentials for <br>everyday enjoyment.</p>
+                        <button class="btn btn-outline-primary">Shop Now</button>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="product-item">
+                                    <img src="./images/image1.png" alt="Robert Sinskey Vineyards" class="img-fluid">
+                                    <p>2017 Robert Sinskey, "Los Carneros" Pinot Noir, 375ml</p>
+                                    <p><span class="price">$28.95</span> <span class="original-price">$32.95</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="product-item">
+                                    <img src="./images/image2.png" alt="Walter Hansel North Slope" class="img-fluid">
+                                    <p>2021 Walter Hansel "North Slope" Pinot Noir</p>
+                                    <p><span class="price">$28.95</span> <span class="original-price">$32.95</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="product-item">
+                                    <img src="./images/image3.png" alt="Occidental Pinot Noir" class="img-fluid">
+                                    <p>2020 Occidental, "Freestone-Occidental" Pinot Noir, Sonoma</p>
+                                    <p><span class="price">$28.95</span> <span class="original-price">$32.95</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="follow-us my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-flex flex-column">
+                        <h2 class="display-4">Follow Us</h2>
+                        <p class="pinfo">Follow us on Instagram to be <br> more connected with us.</p>
+                        <button class="btn btn-outline-primary">Follow us</button>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="instagram-item">
+                                    <a href="https://www.instagram.com/your-profile-1" target="_blank">
+                                        <img src="./images/image4.png" alt="Instagram Image 1" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="instagram-item">
+                                    <a href="https://www.instagram.com/your-profile-2" target="_blank">
+                                        <img src="./images/image5.png" alt="Instagram Image 2" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="instagram-item">
+                                    <a href="https://www.instagram.com/your-profile-3" target="_blank">
+                                        <img src="./images/image6.png" alt="Instagram Image 3" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="instagram-item">
+                                    <a href="https://www.instagram.com/your-profile-4" target="_blank">
+                                        <img src="./images/image9.png" alt="Instagram Image 4" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="instagram-item">
+                                    <a href="https://www.instagram.com/your-profile-5" target="_blank">
+                                        <img src="./images/image10.png" alt="Instagram Image 5" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="instagram-item">
+                                    <a href="https://www.instagram.com/your-profile-6" target="_blank">
+                                        <img src="./images/image11.png" alt="Instagram Image 6" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="location-section my-5">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-6 location-info d-flex flex-column justify-content-center align-items-center p-5">
+                        <i class="bi bi-map" style="font-size: 3rem; color: #b7926a;"></i>
+                        <h2>OUR LOCATION</h2>
+                        <p>One Engle Street, Englewood, NJ 07631</p>
+                    </div>
+                    <div class="col-md-6 location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5874551404586!2d19.79959918870781!3d41.317837497330714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503055c2313529%3A0x195f37434900456b!2sSHERO%20Albania!5e0!3m2!1sen!2sus!4v1720096366748!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h2 class="footer-title">ENGLEWOOD WINE MERCHANTS</h2>
+                    <h1 class="footer-subtitle">Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <form>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" class="form-control mb-2" required>
+                        <button type="submit" class="btn btn-outline-dark">Sign up</button>
+                    </form>
+                    <div class="social-icons mt-3 d-none d-md-flex">
+                        <a href="#" class="mr-2"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="mr-2"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="mr-2"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="mr-2"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h3 class="footer-heading" data-toggle="collapse" data-target="#customer-service" aria-expanded="false" aria-controls="customer-service">CUSTOMER SERVICE</h3>
+                    <div id="customer-service" class="collapse content">
+                        <p><strong>STORE LOCATION</strong><br>One Engle Street, Englewood, NJ 07631</p>
+                        <p><strong>PHONE</strong><br>877-568-8820 / 201-568-8820</p>
+                        <p><strong>EMAIL</strong><br>info@englewoodwinemerchants.com</p>
+                        <p><strong>STORE HOURS</strong><br>Monday - Friday: 10:00 a.m. - 7:00 p.m.<br>Saturday: 11:00 a.m. - 7:00 p.m.<br>Sunday: 12:00 p.m. - 6:00 p.m. (Oct - Dec)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h3 class="footer-heading" data-toggle="collapse" data-target="#information" aria-expanded="false" aria-controls="information">INFORMATION</h3>
+                    <div id="information" class="collapse content">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Shipping Terms</a></li>
+                            <li><a href="#">Local Delivery</a></li>
+                            <li><a href="#">In Store Pickup</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h3 class="footer-heading" data-toggle="collapse" data-target="#more" aria-expanded="false" aria-controls="more">MORE</h3>
+                    <div id="more" class="collapse content">
+                        <ul class="list-unstyled">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">My Cart</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-4">
+                    <div class="social-icons d-md-none">
+                        <a href="#" class="mr-2"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="mr-2"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="mr-2"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="mr-2"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                    <p>&copy; 2022 Englewood Wine Merchants. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
