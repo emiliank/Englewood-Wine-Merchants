@@ -33,9 +33,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-$(document).ready(function(){
-    $('#merchantCarousel').carousel({
-        interval: false 
-        
-    })
-});
+document.addEventListener('DOMContentLoaded', function () {
+    function initializeGlide() {
+      const mobileBreakpoint = 768; 
+      if (window.innerWidth > mobileBreakpoint) {
+        new Glide('.glide', {
+          type: 'carousel',
+          startAt: 0,
+          perView: 1,
+          animationDuration: 800,
+          gap: 0,
+        }).mount();
+      }
+    }
+
+    initializeGlide();
+  
+    
+    window.addEventListener('resize', function () {
+      initializeGlide();
+    });
+  });
+  
