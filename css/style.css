@@ -84,7 +84,7 @@ a {
     font-weight: 400;
     color: #333;
     position: relative;
-    left: -3em;
+    left: -4.5em;
 }
 
 .header-container a:hover {
@@ -104,7 +104,7 @@ a {
 
 .search {
     width: 376px;
-    left: 4.5em;
+    left: 2em;
 }
 
 .search-input {
@@ -162,6 +162,8 @@ input[type=button] {
 
 .icons {
     gap: 10px;
+    position: relative;
+    right: 1em;
 }
 
 .icons a {
@@ -1029,6 +1031,7 @@ input[type=button] {
         font-size: 0.875rem;
     }
 
+    
     .cellar-essentials .btn-outline-primary:hover{
         border-color: #B7926A;
         border-radius: 0px;
@@ -1204,6 +1207,7 @@ input[type=button] {
     height: 400px;
 }
 
+
 .location-section .col-md-6 {
     height: 540px;
 }
@@ -1253,7 +1257,7 @@ input[type=button] {
     }
 
     .location-map iframe {
-        height: 300px;
+        height: 355px;
     }
 }
 
@@ -1425,6 +1429,10 @@ p strong {
 
     .footer .container {
         width: 80%;
+    }
+
+    .footer p {
+        letter-spacing: 0.095px;
     }
 
     .footer .d-md-none {
